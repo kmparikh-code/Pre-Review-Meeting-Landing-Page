@@ -1,0 +1,217 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #222326;
+    padding: 2rem 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    margin: 0 auto 2rem;
+    height: 5rem;
+}
+
+/* Typography */
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00477a;
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #5e6368;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.body-copy {
+    font-size: 1.125rem;
+    color: #222326;
+    text-align: center;
+    margin: 2rem auto;
+    line-height: 1.8;
+    max-width: 42rem;
+}
+
+/* Video */
+.video-container {
+    max-width: 42rem;
+    margin: 2rem auto;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Survey Button */
+.button-container {
+    text-align: center;
+    margin: 3rem auto;
+}
+
+.survey-button {
+    display: inline-block;
+    background-color: #00477a;
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 71, 122, 0.2);
+}
+
+.survey-button:hover {
+    background-color: #003d6b;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 71, 122, 0.3);
+}
+
+.survey-button:active {
+    transform: translateY(0);
+}
+
+/* Document Checklist */
+.checklist-section-wrapper {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid #e0e0e0;
+}
+
+.checklist-main-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00477a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.checklist-intro {
+    font-size: 1.125rem;
+    color: #5e6368;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.checklist-section {
+    background: #f8f9fa;
+    border-left: 4px solid #00477a;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.checklist-topic {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #00477a;
+    margin-bottom: 1rem;
+}
+
+.checklist-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.checklist-items li {
+    font-size: 1rem;
+    color: #222326;
+    padding: 0.5rem 0;
+    line-height: 1.6;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.checklist-items li:last-child {
+    border-bottom: none;
+}
+
+/* Footer */
+.footer-text {
+    font-size: 1.125rem;
+    color: #00477a;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem 0.5rem;
+    }
+
+    .title {
+        font-size: 1.75rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .body-copy {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 4rem;
+    }
+
+    .video-container {
+        max-width: 100%;
+        margin: 1.5rem auto;
+    }
+
+    .survey-button {
+        font-size: 1.125rem;
+        padding: 0.875rem 2rem;
+    }
+
+    .checklist-main-title {
+        font-size: 1.5rem;
+    }
+
+    .checklist-intro {
+        font-size: 1rem;
+    }
+
+    .checklist-topic {
+        font-size: 1rem;
+    }
+
+    .checklist-items li {
+        font-size: 0.9375rem;
+    }
+}
